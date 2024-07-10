@@ -161,6 +161,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPermissionExplanationDialog() {
+        //앱 권한 설정시 TedPermission을 참고
         AlertDialog.Builder(this)
             .setMessage("녹음 권한을 켜주셔야지 앱을 정상적으로 사용할 수 있습니다. 앱 설정 화면으로 진입하셔서 권한을 켜주세요.")
             .setPositiveButton("권한 변경하러 가기") { _, _ -> navigateToAppSetting() }
